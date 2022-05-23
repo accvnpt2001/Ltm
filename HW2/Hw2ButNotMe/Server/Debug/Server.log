@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  Server.cpp
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\hw2\hw2butnotme\server\tcp_stream.h(44): warning C4101: 'pos': unreferenced local variable
+  Generating Code...
+  Server.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\HW2\Hw2ButNotMe\Debug\Server.exe
+  Server.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\HW2\Hw2ButNotMe\Debug\Server.pdb (Full PDB)

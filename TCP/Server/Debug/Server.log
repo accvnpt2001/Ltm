@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  Server.cpp
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\tcp\server\server.cpp(79): warning C4476: 'printf' : unknown type field character '\t' in format specifier
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\tcp\server\server.cpp(79): warning C4474: 'printf' : too many arguments passed for format string
+  d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\tcp\server\server.cpp(79): note: placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+  Generating Code...
+  Server.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\TCP\Debug\Server.exe
+  Server.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\TCP\Debug\Server.pdb (Full PDB)

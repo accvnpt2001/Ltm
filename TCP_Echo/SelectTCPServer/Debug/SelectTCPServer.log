@@ -1,0 +1,15 @@
+﻿  stdafx.cpp
+  SelectTCPServer.cpp
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\tcp_echo\selecttcpserver\selecttcpserver.cpp(35): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1850): note: see declaration of 'inet_addr'
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\tcp_echo\selecttcpserver\selecttcpserver.cpp(83): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868): note: see declaration of 'inet_ntoa'
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\tcp_echo\selecttcpserver\selecttcpserver.cpp(147): warning C4778: 'printf' : unterminated format string '%'
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\tcp_echo\selecttcpserver\selecttcpserver.cpp(147): warning C4474: 'printf' : too many arguments passed for format string
+  d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\tcp_echo\selecttcpserver\selecttcpserver.cpp(147): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\tcp_echo\selecttcpserver\selecttcpserver.cpp(158): warning C4778: 'printf' : unterminated format string '%'
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\tcp_echo\selecttcpserver\selecttcpserver.cpp(158): warning C4474: 'printf' : too many arguments passed for format string
+  d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\tcp_echo\selecttcpserver\selecttcpserver.cpp(158): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  Generating Code...
+  SelectTCPServer.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\TCP_Echo\Debug\SelectTCPServer.exe
+  SelectTCPServer.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\TCP_Echo\Debug\SelectTCPServer.pdb (Full PDB)

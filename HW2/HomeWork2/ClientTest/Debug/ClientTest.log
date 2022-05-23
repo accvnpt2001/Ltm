@@ -1,0 +1,10 @@
+﻿  stdafx.cpp
+  ClientTest.cpp
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\hw2\homework2\clienttest\clienttest.cpp(202): warning C4101: 'buff': unreferenced local variable
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\hw2\homework2\clienttest\clienttest.cpp(256): warning C4101: 'buff': unreferenced local variable
+  Generating Code...
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\hw2\homework2\clienttest\clienttest.cpp(430): warning C4715: 'thread2': not all control paths return a value
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\hw2\homework2\clienttest\clienttest.cpp(375): warning C4715: 'thread1': not all control paths return a value
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\hw2\homework2\clienttest\clienttest.cpp(312): warning C4715: 'thread': not all control paths return a value
+  ClientTest.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\HW2\HomeWork2\Debug\ClientTest.exe
+  ClientTest.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\HW2\HomeWork2\Debug\ClientTest.pdb (Full PDB)

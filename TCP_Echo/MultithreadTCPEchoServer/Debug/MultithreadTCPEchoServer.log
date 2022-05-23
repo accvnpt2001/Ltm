@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  MultithreadTCPEchoServer.cpp
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\tcp_echo\multithreadtcpechoserver\multithreadtcpechoserver.cpp(95): warning C4476: 'printf' : unknown type field character '\t' in format specifier
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\tcp_echo\multithreadtcpechoserver\multithreadtcpechoserver.cpp(95): warning C4474: 'printf' : too many arguments passed for format string
+  d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\tcp_echo\multithreadtcpechoserver\multithreadtcpechoserver.cpp(95): note: placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+  Generating Code...
+  MultithreadTCPEchoServer.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\TCP_Echo\Debug\MultithreadTCPEchoServer.exe
+  MultithreadTCPEchoServer.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\TCP_Echo\Debug\MultithreadTCPEchoServer.pdb (Full PDB)
