@@ -89,11 +89,13 @@ void service(char *request) {
 
 	while (1)
 	{
+		/*
 		scanf_s("%d", &choice);
 
 		//Clear input buffer
 		int c;
 		while ((c = getchar()) != '\n');
+		*/
 
 		switch (choice)
 		{

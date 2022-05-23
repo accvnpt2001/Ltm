@@ -1,6 +1,6 @@
 ﻿  stdafx.cpp
   Client.cpp
-d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\hw2\homework2\client\client.cpp(84): warning C4101: 'messageLen': unreferenced local variable
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\hw2\homework2\client\client.cpp(96): warning C4101: 'messageLen': unreferenced local variable
   Generating Code...
   Client.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\HW2\HomeWork2\Debug\Client.exe
   Client.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\HW2\HomeWork2\Debug\Client.pdb (Full PDB)

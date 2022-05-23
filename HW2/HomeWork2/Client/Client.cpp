@@ -14,23 +14,35 @@
 #include "status_code.h"
 #include "vector"
 #define SERVER_PORT 5500
-#define BUFF_SIZE 2048
 #define SERVER_ADDR "127.0.0.1"
 #pragma comment (lib, "Ws2_32.lib")
 
 using namespace std;
 
 /**
-* @function displayResponse: dissplay ressponse received from server
-* @param[in] res: A poiter to the response message
+* @function displayRes: dissplay ressponse received from server
+* @param[in] response: std string to the response message
 *
-* @return: void
+* @return: 0 if parse code success
 */
 int displayRes(string response);
 
-int getRequest(char * buffs);
+/**
+* @function service: get requst from user and send
+* @param[in] client: socket used to send
+* @param[out] request: reference to std string of the request message
+*
+* @return: number byte sent
+*/
+int service(SOCKET client, string &request);
 
-int service(string &request);
+/**
+* @function getRequest: get requst from user
+* @param[out] buffs: buffer to get request
+*
+* @return: 0 if success
+*/
+int getRequest(char * buffs);
 
 int main(int argc, char * argv[])
 {
@@ -84,9 +96,8 @@ int main(int argc, char * argv[])
 	int ret, messageLen;
 
 	while (1) {
-		//Send message
-		service(request);
-		ret = sendStream(client, request);
+		//get request and send message
+		ret = service(client, request);
 
 		if (ret == SOCKET_ERROR) {
 			printf("Error %d: Cannot send data", WSAGetLastError());
@@ -102,8 +113,6 @@ int main(int argc, char * argv[])
 				displayRes(response);
 			}
 		}
-		
-		
 	}
 	//Step 6: close socket
 	closesocket(client);
@@ -114,14 +123,18 @@ int main(int argc, char * argv[])
 	return 0;
 }
 
-int service(string &request) {
+int service(SOCKET client, string &request) {
+	int ret;
 	char buffs[BUFF_SIZE];
 	request.clear();
 	
 	getRequest(buffs);
 	buffs[strlen(buffs)] = 0;
 	request += buffs;
-	return 0;
+
+	ret = sendStream(client, request);
+
+	return ret;
 }
 
 int getRequest(char * buffs) {
@@ -129,11 +142,12 @@ int getRequest(char * buffs) {
 	char temp[BUFF_SIZE];
 
 	printf("\n\nChoose service:\n");
-	printf("1.Login.\n");
-	printf("2.Send message.\n");
-	printf("3.Logout.\n\n");
+	printf("   1.Login.\n");
+	printf("   2.Send message.\n");
+	printf("   3.Logout.\n\n");
 
 	while (1) {
+		printf(">>  ");
 		scanf_s("%d", &choice);
 		
 		//Clear input buffer
@@ -143,7 +157,7 @@ int getRequest(char * buffs) {
 		switch (choice) {
 			//Login service
 			case 1: {
-				printf("Enter username:");
+				printf("Enter username:   ");
 				if (gets_s(temp, BUFF_SIZE)) {
 					sprintf_s(buffs, BUFF_SIZE, "USER %s", temp);
 				}
@@ -155,7 +169,7 @@ int getRequest(char * buffs) {
 			}
 			//Send message service
 			case 2: {
-				printf("Enter message:");
+				printf("Enter message:   ");
 				gets_s(temp, BUFF_SIZE);
 				sprintf_s(buffs, BUFF_SIZE, "POST %s", temp);
 				return 0;

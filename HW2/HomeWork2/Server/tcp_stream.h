@@ -30,8 +30,9 @@ int sendStream(SOCKET sock, string message) {
 		strcpy_s(buffs, BUFF_SIZE, "");
 		strcat_s(buffs, byteWillSend + 1, message.substr(i, byteWillSend).c_str());
 		ret = send(sock, buffs, byteWillSend, 0);
-		if (ret == SOCKET_ERROR)
-			break;				// or return ??
+		if (ret == SOCKET_ERROR) {
+			break;
+		}
 	}
 
 	return ret;

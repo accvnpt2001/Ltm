@@ -2,6 +2,7 @@
 #include <iostream>
 #include <WinSock2.h>
 
+using namespace std;
 /**
 * @brief Implementation of a session
 */
@@ -24,16 +25,16 @@ public:
 	}
 
 	/**
-	* @brief is called when a client login, change session's username and status
-	* @param i_username account's username
+	* @brief login, change session's username and status
+	* @param in_username account's username
 	*/
-	void login(const std::string &in_username) {
+	void login(const string &in_username) {
 		userName = _strdup(in_username.c_str());
 		status = 1;
 	}
 
 	/**
-	* @brief is called when a client logout, change session's username and status to default
+	* @brief logout, change session's username and status to default
 	*/
 	void logout() {
 		userName = _strdup("");

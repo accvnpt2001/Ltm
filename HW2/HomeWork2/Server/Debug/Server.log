@@ -1,7 +1,6 @@
 ﻿  stdafx.cpp
   Server.cpp
-d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\hw2\homework2\server\server.cpp(134): warning C4101: 'buff': unreferenced local variable
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\hw2\homework2\server\server.cpp(87): warning C4101: 'buff': unreferenced local variable
   Generating Code...
-d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\hw2\homework2\server\server.cpp(265): warning C4715: 'getAccount': not all control paths return a value
   Server.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\HW2\HomeWork2\Debug\Server.exe
   Server.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\HW2\HomeWork2\Debug\Server.pdb (Full PDB)

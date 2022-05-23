@@ -15,6 +15,12 @@
 
 using namespace std;
 
+/**
+* @brief parse code to string and display to client
+* @param[in] code: the connected socket
+* @return: return string of mesage
+*/
+
 string reasonPharse(int code) {
 	switch (code)
 	{
