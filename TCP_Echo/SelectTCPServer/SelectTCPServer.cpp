@@ -50,7 +50,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	printf("Server started!\n");
 
-
+	////////////////////////////////
 	SOCKET client[FD_SETSIZE], connSock;
 	fd_set readfds, initfds; //use initfds to initiate readfds at the begining of every loop step
 	sockaddr_in clientAddr;
@@ -80,7 +80,7 @@ int _tmain(int argc, _TCHAR* argv[])
 				break;
 			}
 			else {
-				printf("You got a connection from %s\n", inet_ntoa(clientAddr.sin_addr)); /* prints client's IP */
+				printf("You got a connection from [%s:%d]\n", inet_ntoa(clientAddr.sin_addr), clientAddr.sin_port); /* prints client's IP */
 
 				int i;
 				for (i = 0; i < FD_SETSIZE; i++)
@@ -111,6 +111,7 @@ int _tmain(int argc, _TCHAR* argv[])
 					FD_CLR(client[i], &initfds);
 					closesocket(client[i]);
 					client[i] = 0;
+					
 				}
 				else if (ret > 0) {
 					processData(rcvBuff, sendBuff);
