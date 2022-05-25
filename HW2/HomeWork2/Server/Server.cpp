@@ -117,13 +117,11 @@ unsigned __stdcall echoThread(void *param) {
 				ret = sendStream(connectedSocket, response + to_string(result));
 				cout << "Receive from client [" << session.getClientIp() << ":" << session.getPort() << "] : " << request << " -->> " << result << endl;
 
-				if (ret == SOCKET_ERROR) {					// kha la thac mac nha co nen xoa ko
-					printf("Error %d: Cannot handler request data.\n", WSAGetLastError());
+				if (ret == SOCKET_ERROR) {					
+					printf("Error %d: Cannot send data.\n", WSAGetLastError());
+					closesocket(connectedSocket);
+					return 0;
 				}
-			}
-			if (ret == SOCKET_ERROR) {				// tai bi trung na
-				printf("Error %d: Cannot send data.\n", WSAGetLastError());
-				break;
 			}
 		}
 		else continue;

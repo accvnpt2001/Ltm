@@ -1,17 +1,17 @@
 ﻿  stdafx.cpp
   Server.cpp
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(97): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868): note: see declaration of 'inet_ntoa'
 d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(103): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
   c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868): note: see declaration of 'inet_ntoa'
-d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(111): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868): note: see declaration of 'inet_ntoa'
-d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(76): warning C4101: 'sendBuff': unreferenced local variable
-d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(76): warning C4101: 'rcvBuff': unreferenced local variable
-d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(197): warning C4778: 'printf' : unterminated format string '%\n'
-d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(197): warning C4474: 'printf' : too many arguments passed for format string
-  d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(197): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(208): warning C4778: 'printf' : unterminated format string '%\n'
-d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(208): warning C4474: 'printf' : too many arguments passed for format string
-  d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(208): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(70): warning C4101: 'sendBuff': unreferenced local variable
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(70): warning C4101: 'rcvBuff': unreferenced local variable
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(177): warning C4778: 'printf' : unterminated format string '%\n'
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(177): warning C4474: 'printf' : too many arguments passed for format string
+  d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(177): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(188): warning C4778: 'printf' : unterminated format string '%\n'
+d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(188): warning C4474: 'printf' : too many arguments passed for format string
+  d:\onedriver\onedrive - hanoi university of science and technology\tailieu\sep6\laptrinhmang\workggr\homework3\server\server.cpp(188): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
   Generating Code...
   Server.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\HomeWork3\Debug\Server.exe
   Server.vcxproj -> D:\OneDriver\OneDrive - Hanoi University of Science and Technology\tailieu\Sep6\LapTrinhMang\WorkgGr\HomeWork3\Debug\Server.pdb (Full PDB)

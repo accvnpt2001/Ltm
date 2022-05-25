@@ -19,12 +19,8 @@
 
 using namespace std;
 
-void processData(char *, char *);
 int Receive(SOCKET, char *, int, int);
 int Send(SOCKET, char *, int, int);
-
-/* echoThread - Thread to receive the message from client and echo*/
-unsigned __stdcall echoThread(void *param);
 
 int main(int argc, char* argv[])
 {
@@ -65,8 +61,6 @@ int main(int argc, char* argv[])
 
 	//Step 5: Communicate with client
 
-
-	//////////////////////////
 	SOCKET client[FD_SETSIZE], connSock; 
 	Session sessions[FD_SETSIZE];
 
@@ -105,10 +99,8 @@ int main(int argc, char* argv[])
 				int i;
 				for (i = 0; i < FD_SETSIZE; i++)
 					if (client[i] == 0) {
-						client[i] = connSock;					
-						sessions[i].setSocket(connSock);
-						sessions[i].setPort(clientAddr.sin_port);
-						sessions[i].setClientIp(inet_ntoa(clientAddr.sin_addr));
+						client[i] = connSock;	
+						sessions[i] = Session(connSock, inet_ntoa(clientAddr.sin_addr), clientAddr.sin_port);
 						FD_SET(client[i], &initfds);
 						break;
 					}
@@ -138,7 +130,6 @@ int main(int argc, char* argv[])
 					FD_CLR(client[i], &initfds);
 					closesocket(client[i]);
 					client[i] = 0;
-					sessions[i] = Session();
 				}
 
 				else if (ret > 0) {
@@ -156,7 +147,6 @@ int main(int argc, char* argv[])
 							FD_CLR(client[i], &initfds);
 							closesocket(client[i]);
 							client[i] = 0;
-							sessions[i] = Session();
 						}
 					}
 					if (ret == SOCKET_ERROR) {
@@ -177,15 +167,6 @@ int main(int argc, char* argv[])
 	return 0;
 }
 
-
-/* The processData function copies the input string to output
-* @param in Pointer to input string
-* @param out Pointer to output string
-* @return No return value
-*/
-void processData(char *in, char *out) {
-	memcpy(out, in, BUFF_SIZE);
-}
 
 /* The recv() wrapper function */
 int Receive(SOCKET s, char *buff, int size, int flags) {
